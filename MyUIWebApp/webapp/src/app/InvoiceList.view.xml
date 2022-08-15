@@ -1,0 +1,40 @@
+<mvc:View
+   controllerName="MyUIWebApp.src.app.InvoiceList"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <Table
+      id="invoiceList"
+         items="{
+            path : 'invoice>/Invoices'
+         }">
+   
+      <headerToolbar>
+			<Toolbar height="20%">
+				<Image width="40%" src="webapp/img/brgaap.png" ></Image>
+				<ToolbarSpacer/>
+            <Title text="Pequisar"/>
+				<SearchField width="50%" search=".onFilterInvoices"/>
+			</Toolbar>
+	   </headerToolbar>
+      <columns>
+            <Column>
+               <Text text="Nome"/>
+            </Column>
+            <Column>
+               <Text text="Completado"/>
+            </Column>
+            <Column>
+               <Text text="Descrição"/>
+            </Column>
+      </columns>
+      <items>
+            <ColumnListItem>
+               <cells>
+                  <ObjectIdentifier text="{invoice>title}"/>
+                  <CheckBox selected="{invoice>completed}"/>
+                  <Button text="Detalhes" press=".onPress"/>
+               </cells>
+            </ColumnListItem>
+      </items>
+   </Table>
+</mvc:View>

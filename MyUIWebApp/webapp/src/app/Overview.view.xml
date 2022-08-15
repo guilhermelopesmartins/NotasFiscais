@@ -1,0 +1,14 @@
+<mvc:View
+controllerName="MyUIWebApp.src.app.App"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:form="sap.ui.layout.form"
+	xmlns:l="sap.ui.layout"
+	xmlns:tnt="sap.tnt"
+	height="90%">
+	<Page title="Lista de Notas Fiscais">
+		<content>
+			<mvc:XMLView viewName="MyUIWebApp.src.app.InvoiceList"/>
+		</content>
+	</Page>
+</mvc:View>

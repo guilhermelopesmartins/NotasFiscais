@@ -1,0 +1,12 @@
+<mvc:View
+	controllerName="MyUIWebApp.src.app.Detail"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page
+		title="Detail"
+		showNavButton="true"
+		navButtonPress=".onNavBack">
+		<ObjectHeader
+			title="Título: {invoice>title}"/>
+	</Page>
+</mvc:View>
